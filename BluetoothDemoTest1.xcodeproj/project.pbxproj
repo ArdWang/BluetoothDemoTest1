@@ -11,6 +11,15 @@
 		BCCCF5D325CA1F290098579B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCF5D225CA1F290098579B /* ContentView.swift */; };
 		BCCCF5D525CA1F2C0098579B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCCCF5D425CA1F2C0098579B /* Assets.xcassets */; };
 		BCCCF5D825CA1F2C0098579B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BCCCF5D725CA1F2C0098579B /* Preview Assets.xcassets */; };
+		BCCCF5E425CA20710098579B /* Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCF5E325CA20710098579B /* Bluetooth.swift */; };
+		BCCCF5E825CA208C0098579B /* DataParaser.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCF5E725CA208C0098579B /* DataParaser.swift */; };
+		BCCCF5EB25CA209C0098579B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCF5EA25CA209C0098579B /* Extensions.swift */; };
+		BCCCF5EE25CA20AC0098579B /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCF5ED25CA20AC0098579B /* Store.swift */; };
+		BCCCF5F125CA20BE0098579B /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCF5F025CA20BE0098579B /* AppState.swift */; };
+		BCCCF5F425CA20CB0098579B /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCF5F325CA20CB0098579B /* AppError.swift */; };
+		BCCCF60325CA71CB0098579B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCF60225CA71CB0098579B /* HomeView.swift */; };
+		BCCCF60625CA740F0098579B /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCF60525CA740F0098579B /* DeviceView.swift */; };
+		BCCCF60925CA74230098579B /* WaveChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCCCF60825CA74230098579B /* WaveChartView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +29,15 @@
 		BCCCF5D425CA1F2C0098579B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BCCCF5D725CA1F2C0098579B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		BCCCF5D925CA1F2C0098579B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BCCCF5E325CA20710098579B /* Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bluetooth.swift; sourceTree = "<group>"; };
+		BCCCF5E725CA208C0098579B /* DataParaser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataParaser.swift; sourceTree = "<group>"; };
+		BCCCF5EA25CA209C0098579B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BCCCF5ED25CA20AC0098579B /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		BCCCF5F025CA20BE0098579B /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		BCCCF5F325CA20CB0098579B /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
+		BCCCF60225CA71CB0098579B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		BCCCF60525CA740F0098579B /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		BCCCF60825CA74230098579B /* WaveChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaveChartView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +70,9 @@
 		BCCCF5CF25CA1F290098579B /* BluetoothDemoTest1 */ = {
 			isa = PBXGroup;
 			children = (
+				BCCCF5E225CA20550098579B /* Utils */,
+				BCCCF5E125CA204F0098579B /* View */,
+				BCCCF5E025CA20470098579B /* Handle */,
 				BCCCF5D025CA1F290098579B /* BluetoothDemoTest1App.swift */,
 				BCCCF5D225CA1F290098579B /* ContentView.swift */,
 				BCCCF5D425CA1F2C0098579B /* Assets.xcassets */,
@@ -67,6 +88,36 @@
 				BCCCF5D725CA1F2C0098579B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		BCCCF5E025CA20470098579B /* Handle */ = {
+			isa = PBXGroup;
+			children = (
+				BCCCF5ED25CA20AC0098579B /* Store.swift */,
+				BCCCF5F025CA20BE0098579B /* AppState.swift */,
+				BCCCF5F325CA20CB0098579B /* AppError.swift */,
+			);
+			path = Handle;
+			sourceTree = "<group>";
+		};
+		BCCCF5E125CA204F0098579B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BCCCF60225CA71CB0098579B /* HomeView.swift */,
+				BCCCF60525CA740F0098579B /* DeviceView.swift */,
+				BCCCF60825CA74230098579B /* WaveChartView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BCCCF5E225CA20550098579B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				BCCCF5E325CA20710098579B /* Bluetooth.swift */,
+				BCCCF5E725CA208C0098579B /* DataParaser.swift */,
+				BCCCF5EA25CA209C0098579B /* Extensions.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +189,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCCCF60325CA71CB0098579B /* HomeView.swift in Sources */,
+				BCCCF60925CA74230098579B /* WaveChartView.swift in Sources */,
+				BCCCF5EB25CA209C0098579B /* Extensions.swift in Sources */,
+				BCCCF60625CA740F0098579B /* DeviceView.swift in Sources */,
+				BCCCF5E825CA208C0098579B /* DataParaser.swift in Sources */,
+				BCCCF5F125CA20BE0098579B /* AppState.swift in Sources */,
 				BCCCF5D325CA1F290098579B /* ContentView.swift in Sources */,
+				BCCCF5F425CA20CB0098579B /* AppError.swift in Sources */,
+				BCCCF5EE25CA20AC0098579B /* Store.swift in Sources */,
+				BCCCF5E425CA20710098579B /* Bluetooth.swift in Sources */,
 				BCCCF5D125CA1F290098579B /* BluetoothDemoTest1App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
